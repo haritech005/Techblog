@@ -1,6 +1,12 @@
 /* General styles for the navbar */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+*{
+  font-family: "Poppins", sans-serif;
+}
+
+
+
 .navbar-header {
   display: flex;
   justify-content: space-between;
@@ -61,11 +67,112 @@
   color: black;
   text-decoration: none;
   padding: 10px 15px;
+  font-family: "Poppins", sans-serif;
 }
 
 .dropdown-link:hover {
   background-color: lightgray;
 }
+
+/* Footer Styles */
+.footer-container {
+  background-color: #f8f9fa; /* Light background color for contrast */
+  color: #343a40; /* Dark text color */
+  padding: 30px 10%; /* Padding for top/bottom and side spacing */
+  display: flex; /* Flexbox for layout */
+  justify-content: space-between; /* Space items across the footer */
+  align-items: flex-start; /* Align items at the top */
+  flex-wrap: wrap; /* Allow wrapping on small screens */
+  border-top: 2px solid #e9ecef; /* Top border for separation */
+}
+
+.footer-about,
+.footer-links,
+.footer-contact,
+.footer-social {
+  flex: 1; /* Allow sections to grow equally */
+  min-width: 200px; /* Minimum width for responsiveness */
+  margin: 10px; /* Space between sections */
+}
+
+.footer-title,
+.footer-subtitle {
+  margin-bottom: 10px; /* Space below headings */
+  font-weight: bold; /* Make titles bold */
+}
+
+.footer-description {
+  font-size: 14px; /* Adjust font size for readability */
+  line-height: 1.5; /* Improve readability with line height */
+  margin: 0; /* Remove default margin */
+}
+
+.footer-link-list,
+.footer-contact-list {
+  list-style: none; /* Remove default list styles */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+}
+
+.footer-link-list li,
+.footer-contact-list li {
+  margin: 5px 0; /* Space between links */
+}
+
+.footer-link-list a {
+  color: #007bff; /* Primary color for links */
+  text-decoration: none; /* Remove underline from links */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.footer-link-list a:hover {
+  text-decoration: underline; /* Underline on hover */
+  color: #0056b3; /* Darker shade on hover */
+}
+
+.footer-social {
+  text-align: right; /* Align social icons to the right */
+}
+
+.footer-social-icons {
+  list-style: none; /* Remove default list styles */
+  padding: 0; /* Remove padding */
+  display: flex; /* Flexbox for icons */
+  justify-content: flex-end; /* Align icons to the right */
+}
+
+.footer-social-icons li {
+  margin-left: 10px; /* Space between icons */
+}
+
+.footer-social-icons a {
+  color: #343a40; /* Dark color for icons */
+  font-size: 24px; /* Icon size */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.footer-social-icons a:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column; /* Stack sections vertically on small screens */
+      align-items: center; /* Center items */
+      padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .footer-about,
+  .footer-links,
+  .footer-contact,
+  .footer-social {
+      text-align: center; /* Center text on small screens */
+      margin: 10px 0; /* Space above and below */
+  }
+}
+
+
 
 /* Responsive behavior for mobile */
 @media (max-width: 768px) {
