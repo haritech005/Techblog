@@ -1,22 +1,24 @@
 /* General styles for the navbar */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 .navbar-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  background-color: #333;
+  /* padding: 8px; */
+  background-color: black;
 }
 
 .logo a {
   text-decoration: none;
   color: white;
-  font-size: 1.8rem;
-  font-weight: bold;
+  font-size: 2rem;
+  /* font-weight: bold; */
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
 }
 
-.navbar {
-  background-color: #333;
-}
+
 
 .nav-links {
   list-style: none;
@@ -33,6 +35,7 @@
   text-decoration: none;
   font-size: 1.2rem;
   padding: 10px 15px;
+  font-family: "Poppins", sans-serif;
 }
 
 .nav-link:hover {
@@ -45,7 +48,7 @@
   position: absolute;
   top: 100%; /* Aligns dropdown just below the parent */
   left: 0;
-  background-color: #444;
+  background-color: white;
   list-style: none;
   padding: 10px 0;
   display: block;
@@ -55,13 +58,13 @@
 
 .dropdown-link {
   display: block;
-  color: white;
+  color: black;
   text-decoration: none;
   padding: 10px 15px;
 }
 
 .dropdown-link:hover {
-  background-color: #555;
+  background-color: lightgray;
 }
 
 /* Responsive behavior for mobile */

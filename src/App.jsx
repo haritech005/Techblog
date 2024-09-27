@@ -1,3 +1,4 @@
+import NavComponent from "./Components/Navbarcomponent/NavComponent"
 
 
 function App() {
@@ -5,7 +6,7 @@ function App() {
 
   return (
     <>
-      <h1>Main Component</h1>
+      <NavComponent/>
     </>
   )
 }
