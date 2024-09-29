@@ -5,6 +5,11 @@
   font-family: "Poppins", sans-serif;
 }
 
+body{
+  /* width: 100vw; */
+  height: 100vh;
+  background-color: lightgray;
+}
 
 
 .navbar-header {
@@ -12,7 +17,7 @@
   justify-content: space-between;
   align-items: center;
   /* padding: 8px; */
-  background-color: black;
+  background-color: #242145f3;
 }
 
 .logo a {
@@ -37,7 +42,7 @@
 }
 
 .nav-link {
-  color: white;
+  color: lightgray;
   text-decoration: none;
   font-size: 1.2rem;
   padding: 10px 15px;
@@ -45,7 +50,7 @@
 }
 
 .nav-link:hover {
-  background-color: #555;
+  color: white;
   border-radius: 4px;
 }
 
@@ -76,14 +81,15 @@
 
 /* Footer Styles */
 .footer-container {
-  background-color: #f8f9fa; /* Light background color for contrast */
+  background-color: #242145f3; /* Light background color for contrast */
   color: #343a40; /* Dark text color */
-  padding: 30px 10%; /* Padding for top/bottom and side spacing */
+  padding: 10px 5%; /* Padding for top/bottom and side spacing */
   display: flex; /* Flexbox for layout */
   justify-content: space-between; /* Space items across the footer */
   align-items: flex-start; /* Align items at the top */
   flex-wrap: wrap; /* Allow wrapping on small screens */
   border-top: 2px solid #e9ecef; /* Top border for separation */
+  gap: 60px;
 }
 
 .footer-about,
@@ -91,27 +97,36 @@
 .footer-contact,
 .footer-social {
   flex: 1; /* Allow sections to grow equally */
-  min-width: 200px; /* Minimum width for responsiveness */
+  min-width: 200px;
   margin: 10px; /* Space between sections */
+  text-align:left ;
 }
 
 .footer-title,
 .footer-subtitle {
+  color: white;
   margin-bottom: 10px; /* Space below headings */
   font-weight: bold; /* Make titles bold */
 }
 
 .footer-description {
+  color: white;
   font-size: 14px; /* Adjust font size for readability */
-  line-height: 1.5; /* Improve readability with line height */
-  margin: 0; /* Remove default margin */
+  /* line-height: 1.5;  */
+   /* Remove default margin */
+   width: 300px;
 }
 
+.footer-links{
+  margin-left: 100px;
+}
 .footer-link-list,
 .footer-contact-list {
   list-style: none; /* Remove default list styles */
   padding: 0; /* Remove padding */
   margin: 0; /* Remove margin */
+  color: white;
+  width: 520px;
 }
 
 .footer-link-list li,
@@ -120,18 +135,19 @@
 }
 
 .footer-link-list a {
-  color: #007bff; /* Primary color for links */
+  color: white; /* Primary color for links */
   text-decoration: none; /* Remove underline from links */
   transition: color 0.3s; /* Smooth transition for hover effect */
 }
 
 .footer-link-list a:hover {
   text-decoration: underline; /* Underline on hover */
-  color: #0056b3; /* Darker shade on hover */
+  color: #e7005e; /* Darker shade on hover */
 }
 
 .footer-social {
   text-align: right; /* Align social icons to the right */
+  
 }
 
 .footer-social-icons {
@@ -139,6 +155,7 @@
   padding: 0; /* Remove padding */
   display: flex; /* Flexbox for icons */
   justify-content: flex-end; /* Align icons to the right */
+  
 }
 
 .footer-social-icons li {
@@ -149,10 +166,91 @@
   color: #343a40; /* Dark color for icons */
   font-size: 24px; /* Icon size */
   transition: color 0.3s; /* Smooth transition for hover effect */
+  color: white;
 }
 
 .footer-social-icons a:hover {
-  color: #007bff; /* Change color on hover */
+  color: #e7005e; /* Change color on hover */
+}
+
+/* General styling for the hero container */
+.hero-container {
+  padding: 20px;
+}
+
+/* Flexbox for hero cards */
+.hero-cards {
+  display: flex;
+  flex-wrap: wrap; /* Allows the cards to wrap to the next line when needed */
+  gap: 60px; /* Space between each card */
+  justify-content: flex-start; /* Align cards to the left */
+}
+
+/* Individual card styling */
+.blogimg {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the card */
+  width: calc(29% - 20px); /* Responsive width to fit 3 cards in a row */
+  padding: 15px;
+  /* text-align: center; */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Ensure the cards have a consistent layout inside */
+.blogimg img {
+  width: 100%; /* Make image take full width */
+  height: auto;
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 10px;
+}
+
+.blogheader {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 10px;
+  color: #333;
+}
+
+.content {
+  font-size: 1rem;
+  color: #555;
+  margin: 10px 0;
+}
+
+.article {
+  font-size: 0.9rem;
+  color: #e7005e;
+  text-transform: uppercase;
+}
+
+/* Hover effect */
+.blogimg:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.heroheader{
+  color: #e7005e;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+  .blogimg {
+    width: calc(33.33% - 20px); /* 3 cards per row on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .blogimg {
+    width: calc(50% - 20px); /* 2 cards per row on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .blogimg {
+    width: 100%; /* 1 card per row on very small screens */
+  }
 }
 
 /* Responsive Styles */
