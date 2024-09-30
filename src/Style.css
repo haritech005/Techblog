@@ -6,7 +6,6 @@
 }
 
 body{
-  /* width: 100vw; */
   height: 100vh;
   background-color: lightgray;
 }
@@ -24,7 +23,6 @@ body{
   text-decoration: none;
   color: white;
   font-size: 2rem;
-  /* font-weight: bold; */
   font-weight: 500;
   font-family: "Poppins", sans-serif;
 }
@@ -221,7 +219,7 @@ body{
 .article {
   font-size: 0.9rem;
   color: #e7005e;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 /* Hover effect */
@@ -262,8 +260,7 @@ body{
 /* Blog article text styling */
 .article {
   font-size: 0.9rem;
-  color: #777;
-  text-transform: uppercase;
+  color:#e7005e;
   margin-bottom: 10px;
 }
 
@@ -291,9 +288,25 @@ body{
   text-decoration: none;
 }
 
-.article{
-  color:#e7005e;
+.contenttitle{
+  height: 240px;
+  background-color:#e7005cdd;
+  padding-left: 130px;
+  padding-top: 50px;
 }
+
+.blogContent{
+  color: white;
+  font-size: 2.5rem;
+}
+
+.articles{
+  font-weight: bold;
+}
+
+
+
+
 
 /* Media queries for responsiveness */
 @media (max-width: 768px) {

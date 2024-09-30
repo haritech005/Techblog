@@ -10,6 +10,7 @@ import MobileDevelopment from '../categories/MobileDevelopment'
 import ArtificialIntelligence from '../categories/ArtificialIntelligence'
 import Testing from '../categories/Testing'
 import Blockchain from '../categories/Blockchain'
+import Contents from '../HeroContent/Contents'
 
 
 const NavComponent = () => {
@@ -31,6 +32,8 @@ const NavComponent = () => {
             <Route path='/resources' element={<Resources/>} />
             <Route path='/about' element={<About/>} />
             <Route path='/contact' element={<Contact/>} />
+
+            <Route path='/contents' element={<Contents/>} />
         </Routes>
     </BrowserRouter>
 
