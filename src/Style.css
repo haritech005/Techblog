@@ -234,6 +234,75 @@ body{
   color: #e7005e;
 }
 
+/* Container for the heroboxes */
+.herobox {
+  display: flex;
+  flex-wrap: wrap; /* Ensures the items wrap to the next row if space runs out */
+  justify-content: space-between; /* Distributes the boxes evenly */
+  gap: 20px; /* Adds space between each box */
+  margin-top: 40px;
+}
+
+/* Individual hero box styling */
+.herobox > div {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  padding: 20px;
+  width: calc(50% - 20px); /* Ensures exactly 2 components per row */
+  box-sizing: border-box; /* Ensures padding is included in width */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.herobox > div:hover {
+  transform: translateY(-5px); /* Adds a hover effect to lift the box */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Increases shadow on hover */
+}
+
+/* Blog article text styling */
+.article {
+  font-size: 0.9rem;
+  color: #777;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* Header text (blog title) styling */
+.blogheader {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.blogheader a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Content text (description) styling */
+.content {
+  font-size: 0.8rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.heroboxlink{
+  text-decoration: none;
+}
+
+.article{
+  color:#e7005e;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .herobox > div {
+    width: calc(100% - 20px); /* On smaller screens, make it full-width */
+  }
+}
+
+
 /* Media Queries for Responsive Design */
 @media (max-width: 1024px) {
   .blogimg {
