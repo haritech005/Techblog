@@ -33,7 +33,7 @@ const NavComponent = () => {
             <Route path='/about' element={<About/>} />
             <Route path='/contact' element={<Contact/>} />
 
-            <Route path='/contents' element={<Contents/>} />
+            <Route path='/contents/:id' element={<Contents/>} />
         </Routes>
     </BrowserRouter>
 

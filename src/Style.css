@@ -10,6 +10,39 @@ body{
   background-color: lightgray;
 }
 
+/* Hide the scrollbar */
+body {
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #888 #f1f1f1; /* For Firefox */
+}
+
+::selection {
+  background-color:#e7005e; /* Background color when text is selected */
+  color: #ffffff; /* Text color when selected */
+}
+
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background of the scrollbar track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scrollbar handle */
+  border-radius: 10px; /* Rounded scrollbar handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #e7005e; /* Darker color when hovered */
+}
+
+
 
 .navbar-header {
   display: flex;
@@ -17,6 +50,7 @@ body{
   align-items: center;
   /* padding: 8px; */
   background-color: #242145f3;
+
 }
 
 .logo a {
@@ -289,7 +323,7 @@ body{
 }
 
 .contenttitle{
-  height: 240px;
+  height: 200px;
   background-color:#e7005cdd;
   padding-left: 130px;
   padding-top: 50px;
@@ -300,8 +334,27 @@ body{
   font-size: 2.5rem;
 }
 
-.articles{
+.articles,
+.articledate{
   font-weight: bold;
+}
+
+.contentMain{
+  max-width: 100%;
+  padding: 70px;
+  background-color: white;
+  margin: 30px;
+}
+
+.colorchange
+{
+  color: #e7005e;
+}
+
+.maincontent,
+.initialcontent{
+  text-align: justify;
+  line-height:30px;
 }
 
 

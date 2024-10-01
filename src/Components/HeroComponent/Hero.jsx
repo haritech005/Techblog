@@ -15,31 +15,37 @@ const Hero = () => {
       <hr />
       <div className="hero-cards">
         <HeroCard 
+          id = {1}
           img={image1}
           header="ChatGPT's new Browse with Bing: Watching AIs stalk you is odd"
           content="New Bing-powered ChatGPT cares about providing reliable sources, taking its time, and finding out what you had for..."
         />
         <HeroCard 
+          id = {2}
           img={image2}
           header="4 user story templates + how to write them with examples"
           content="User story templates outline product features and functionality. Here are four user story templates with detailed..."
         />
-        <HeroCard 
+        <HeroCard
+          id = {3} 
           img={image3}
           header="Scrum vs. SAFe: Which Agile framework is right for your team?"
           content="Scrum vs. SAFe: Making the right choice for powerful organizational change. We’ll explain each framework, their pros..."
         />
-        <HeroCard 
+        <HeroCard
+          id = {4} 
           img={image4}
           header="Bard vs ChatGPT: Which is better for coding?"
           content="We test out which tool is best at code generation, problem solving, refactoring code, providing debugging assistance..."
         />
-        <HeroCard 
+        <HeroCard
+          id = {5} 
           img={image5}
           header="VCP-DCV: All about VMware's Data Center Virtualization 2023"
           content="What the VCP-DCV is, what to expect, and the recent and upcoming changes to the certification requirements..."
         />
-         <HeroCard 
+         <HeroCard
+          id = {6} 
           img={imag6}
           header="What is R&D capitalization?"
           content="R&D capitalization is a process companies use to categorize research and development costs as investments rather than..."

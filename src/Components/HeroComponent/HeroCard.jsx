@@ -7,7 +7,7 @@ const HeroCard = (props) => {
   return (
     <>
     <div className="blogimg">
-      <a href='/contents'> <img src={props.img} alt="BlogImage" /> </a>
+      <a href={`/contents/${props.id}`}> <img src={props.img} alt="BlogImage" /> </a>
         <p className="article">Blog Articles</p>
         <h4 className="blogheader">{props.header}</h4>
         <p className="content">{props.content}</p>
@@ -23,5 +23,6 @@ export default HeroCard
 HeroCard.propTypes = {
     header: PropTypes.string.isRequired, 
     content : PropTypes.string.isRequired, 
-    img : PropTypes.string.isRequired, 
+    img : PropTypes.string.isRequired,
+    id: PropTypes.number.isRequired 
 }
