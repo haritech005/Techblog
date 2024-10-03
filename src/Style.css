@@ -206,6 +206,10 @@ body {
   color: #e7005e; /* Change color on hover */
 }
 
+.newsletter-signup input[type="checkbox"]:focus{
+  color: #e7005e;
+}
+
 /* Newsletter Container */
 .newsletter-signup {
   padding: 10px;          /* Reduced padding for smaller footprint */
@@ -391,7 +395,7 @@ body {
 
 .contenttitle{
   height: 200px;
-  background-color:#e7005cdd;
+  background-color:#0097e6;
   padding-left: 130px;
   padding-top: 50px;
 }
