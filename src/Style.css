@@ -121,13 +121,12 @@ body {
   align-items: flex-start; /* Align items at the top */
   flex-wrap: wrap; /* Allow wrapping on small screens */
   border-top: 2px solid #e9ecef; /* Top border for separation */
-  gap: 60px;
+  gap: 70px;
 }
 
 .footer-about,
 .footer-links,
-.footer-contact,
-.footer-social {
+.footer-contact {
   flex: 1; /* Allow sections to grow equally */
   min-width: 200px;
   margin: 10px; /* Space between sections */
@@ -179,6 +178,7 @@ body {
 
 .footer-social {
   text-align: right; /* Align social icons to the right */
+
   
 }
 
@@ -187,11 +187,12 @@ body {
   padding: 0; /* Remove padding */
   display: flex; /* Flexbox for icons */
   justify-content: flex-end; /* Align icons to the right */
-  
+
 }
 
 .footer-social-icons li {
   margin-left: 10px; /* Space between icons */
+  margin-left: 20px;
 }
 
 .footer-social-icons a {
@@ -203,6 +204,72 @@ body {
 
 .footer-social-icons a:hover {
   color: #e7005e; /* Change color on hover */
+}
+
+/* Newsletter Container */
+.newsletter-signup {
+  padding: 10px;          /* Reduced padding for smaller footprint */
+  text-align: center;
+}
+
+/* Header Styling */
+.newsletter-signup h3 {
+  font-size: 1.2rem;       /* Smaller font size */
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Input Field Styling */
+.newsletter-signup input[type="email"] {
+  width: 70%;             /* Smaller input width */
+  padding: 8px;           /* Smaller padding */
+  font-size: 0.9rem;      /* Adjusted font size */
+  border: 1px solid #ccc;
+  border-radius: 4px;     /* Slightly smaller border radius */
+  margin-bottom: 10px;
+  transition: border-color 0.2s ease-in-out;
+}
+
+/* Input Focus State */
+.newsletter-signup input[type="email"]:focus {
+  border-color:#e7005e;
+  outline: none;
+}
+
+/* Checkbox Label Styling */
+.newsletter-signup label {
+  font-size: 0.85rem;      /* Slightly smaller font size */
+  color: #555;
+  margin-bottom: 10px;
+  display: block;          /* Ensures the checkbox aligns properly */
+}
+
+/* Submit Button Styling */
+.newsletter-signup button {
+  background-color:#e7005e;
+  color: white;
+  padding: 6px 12px;      /* Smaller button size */
+  border: none;
+  border-radius: 14px;
+  font-size: 0.9rem;      /* Smaller font size */
+  cursor: pointer;
+}
+
+/* Button Hover Effect */
+.newsletter-signup button:hover {
+  background-color: #e7005ccc;
+}
+
+/* Status Message Styling */
+.newsletter-signup p {
+  font-size: 0.85rem;      /* Smaller font for status message */
+  color: #333;
+  margin-top: 8px;
+}
+
+.signupnews,
+.recieve{
+  color:white !important
 }
 
 /* General styling for the hero container */

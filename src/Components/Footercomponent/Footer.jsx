@@ -3,6 +3,7 @@ import { PiInstagramLogoFill } from "react-icons/pi";
 import { TbBrandYoutubeFilled } from "react-icons/tb";
 import { TbBrandTwitterFilled } from "react-icons/tb";
 import { TbBrandFacebookFilled } from "react-icons/tb";
+import Newsletter from './Newsletter';
 
 const Footer = () => {
   return (
@@ -25,22 +26,27 @@ const Footer = () => {
         </ul>
       </div>
 
-      <div className="footer-contact">
+      {/* <div className="footer-contact">
         <h4 className="footer-subtitle">Contact</h4>
         <ul className="footer-contact-list">
           <li>Email: j.hariharan005@gmail.com</li>
           <li>Location: Chennai</li>
           <li>Contact: +91 9874567839</li>
         </ul>
-      </div>
+      </div> */}
 
-      <div className="footer-social">
+     
+
+      <div>
+        <Newsletter/>
+         <div className="footer-social">
         <ul className="footer-social-icons">
           <li><a href=""><PiInstagramLogoFill /></a></li>
           <li><a href=""><TbBrandYoutubeFilled /></a></li>
           <li><a href=""><TbBrandTwitterFilled /></a></li>
           <li><a href=""><TbBrandFacebookFilled /></a></li>
         </ul>
+      </div>
       </div>
     </footer>
   );
