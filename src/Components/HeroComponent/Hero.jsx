@@ -77,6 +77,10 @@ const Hero = () => {
          header="ChatGPT & GPT-4 for most leaders: It's not ready for you (yet)"
          content="Why leaders should take a step back from the hype and check if GPT-4 is really going to add business value, and that..."
         />
+        <HeroBox
+         header="ChatGPT & GPT-4 for most leaders: It's not ready for you (yet)"
+         content="Why leaders should take a step back from the hype and check if GPT-4 is really going to add business value, and that..."
+        />
       </div>
     </div>
   );
